@@ -1,0 +1,8 @@
+{
+  "name": "creature-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PedroCM96/creature-generator.git",
+  "author": "Pedro Carnerero <pedrocarnereromartinez@gmail.com>",
+  "license": "MIT"
+}
