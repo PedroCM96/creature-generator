@@ -1,23 +1,21 @@
 import {CharacterPart} from "./CharacterPart";
+import {Character as CharacterType, CharacterView} from "../../domain";
+
 
 interface CharacterProps  {
-  body: number,
-  bottom: number,
-  carryingStuff: number,
-  hair: number,
-  hat: number,
-  top: number
+    character: CharacterType,
+    view: CharacterView
 }
 
-export function Character({body, bottom, carryingStuff, hair, hat, top}: CharacterProps) {
+export function Character({character, view}: CharacterProps) {
   return (
-    <div style={{position: "relative"}}>
-      <CharacterPart index={body} part={"body"}/>
-      <CharacterPart index={bottom} part={"bottom"}/>
-      <CharacterPart index={carryingStuff} part={"carrying_stuff"}/>
-      <CharacterPart index={hair} part={"hair"}/>
-      <CharacterPart index={hat} part={"hat"}/>
-      <CharacterPart index={top} part={"top"}/>
+    <div style={{position: 'relative', width: '64px', height: '64px'}}>
+      <CharacterPart index={character.body} part={"body"} view={view}/>
+      <CharacterPart index={character.bottom} part={"bottom"} view={view}/>
+      <CharacterPart index={character.carryingStuff} part={"carrying_stuff"} view={view}/>
+      <CharacterPart index={character.hair} part={"hair"} view={view}/>
+      <CharacterPart index={character.hat} part={"hat"} view={view}/>
+      <CharacterPart index={character.top} part={"top"} view={view}/>
     </div>
   );
 }

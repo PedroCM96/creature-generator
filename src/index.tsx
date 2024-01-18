@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Character} from "./components";
-
-
+import {App} from "./components";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <Character body={1} bottom={6} carryingStuff={5} hair={2} hat={1} top={4}/>
+      <>
+          <div className={'wave'}></div>
+          <div className={'wave'}></div>
+          <div className={'wave'}></div>
+          <App/>
+      </>
   </React.StrictMode>
 );
 

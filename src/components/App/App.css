@@ -1,0 +1,72 @@
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background-color: lightgoldenrodyellow;
+  padding: 30px;
+  border-radius: 7px;
+  border: 2px solid black
+}
+
+.hgss-button {
+  border-radius:7px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  text-decoration:none;
+  box-shadow: 0px 0px 0px 2px #010300;
+  text-shadow:0px 1px 0px #000000;
+}
+
+.hgss-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.green {
+  background:linear-gradient(to bottom, #209e41 5%, #63c92c 100%);
+  background-color:#209e41;
+  border:1px solid #18ab29;
+}
+
+.green:hover {
+  background:linear-gradient(to bottom, #63c92c 5%, #209e41 100%);
+  background-color:#63c92c;
+}
+
+.orange {
+  background:linear-gradient(to bottom, #f5aa1e 5%, #915500 100%);
+  background-color:#f5aa1e;
+  border:1px solid #ff9d00;
+}
+.orange:hover {
+  background:linear-gradient(to bottom, #915500 5%, #f5aa1e 100%);
+  background-color:#915500;
+}
+
+input {
+
+  border: 3px solid #000;
+  border-radius: 5px;
+  padding: 6px 10px;
+  line-height: normal;
+  color: #282828;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+input:focus{
+  border: 3px solid green;
+}
